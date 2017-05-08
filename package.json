@@ -9,7 +9,6 @@
   "author": "Justin Uzoije",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^1.0.2",
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
