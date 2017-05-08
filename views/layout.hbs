@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link href="/style.css" rel="stylesheet">
+    <script src="/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <style>
+  p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  button {
+    background-color: #abe4f8;
+    border: solid 1px #8cc5d9;
+    border-bottom: solid 3px #589cb6;
+    box-shadow: inset 0 0 0 1px #cdeffb;
+    color: #42788e;
+    text-shadow: 0 1px 0 #b6e6f9;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 5px 10px 5px 10px;
+
+  }
+  a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #ecf0f1;
+  }
+
+  a:hover {
+    color: #80d4f5;
+    border: solid 1px #79acbe;
+    border-bottom: solid 3px #589cb6;
+    box-shadow: inset 0 0 0 1px #b2e6f8;
+  }
+  </style>
+  <body>
+    {{#if session.loggedInUser}}
+      <p>Go, {{session.loggedInUser}}!</p>
+        <form action ='/leaderboard'>
+          <button class = "gameOver" style="display:none;">Display High Scores</button>
+        </form>
+        <form action ='/game'>
+          <button class = "gameOver" style ="display:none;">Play Again</button>
+        </form>
+
+    {{/if}}
+
+    {{{ body }}}
+  </body>
+</html>

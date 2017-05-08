@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.search-form {
+
+}
+.search-form input,
+.search-form button {
+  font-size: 2em;
+}

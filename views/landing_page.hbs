@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hamster Wheel</title>
+    <a href="http://s795.photobucket.com/user/PixKaruumi/media/Pixels/Pixels%2091/haminwheel2.gif.html" target="_blank"></a>
+    <style>
+      body {
+        background-color: #AFFBC6;
+      }
+
+      input {
+        margin: 0 0 .4em 0;
+        width: 30%;
+        height: 25px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.01);
+        border: 0;
+        border-bottom: 5px solid rgba(0,0,0,.12);
+        line-height: 40px;
+
+      }
+
+      button {
+        background-color: #abe4f8;
+        border: solid 1px #8cc5d9;
+        border-bottom: solid 3px #589cb6;
+        box-shadow: inset 0 0 0 1px #cdeffb;
+        color: #42788e;
+        text-shadow: 0 1px 0 #b6e6f9;
+        border-radius: 50px;
+        font-size: 15px;
+        margin-top: 20px;
+        padding: 5px 10px 5px 10px;
+
+      }
+      a {
+        text-decoration: none;
+        font-weight: 900;
+        color: #ecf0f1;
+      }
+
+      a:hover {
+        color: #80d4f5;
+        border: solid 1px #79acbe;
+        border-bottom: solid 3px #589cb6;
+        box-shadow: inset 0 0 0 1px #b2e6f8;
+
+      }
+
+
+      .center {
+        margin: 5% auto;
+        background-color: #282C34;
+        text-align: center;
+        color: white;
+        width: 500px;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        border-radius: 35px;
+      }
+
+
+      .hamster {
+        padding-top: 45px;
+
+      }
+
+      .login {
+        padding-top: 20px;
+      }
+
+      .create_login{
+        padding-bottom: 30px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+    <div class="center">
+      <div class="login">
+      <form action="/submit_login" method="POST">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">LOGIN</button>
+      </form>
+      </div>
+      <div class="hamster">
+      <img src="http://i795.photobucket.com/albums/yy232/PixKaruumi/Pixels/Pixels%2091/haminwheel2.gif" border="0" alt="hamster photo haminwheel2.gif" width="40%">
+      </div>
+      <div class="create_login">
+      <p>SIGN UP NOW</p>
+      <form action="/create_login" method="POST">
+        <input type="text" name="username" placeholder="Username"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <button type="submit">CREATE LOGIN</button>
+      </form>
+      </div>
+
+    </div>
+  </body>
+</html>

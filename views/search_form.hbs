@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<form action="/search" class="search-form">
+  <input type="text" name="searchTerm" autocomplete="off">
+  <button type="submit">Go</button>
+</form>
+<div id="search-results"></div>
+<script>
+$('.search-form input').on('keyup', function(event) {
+  event.preventDefault();
+
+  var searchTerm = $('.search-form input').val();
+  $.get('/search?searchTerm=' + searchTerm)
+    .then(function(data) {
+      console.log('Got the data', data);
+      $('#search-results').html(data);
+    });
+});
+</script>
